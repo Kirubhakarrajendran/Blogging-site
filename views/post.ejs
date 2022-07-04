@@ -1,0 +1,14 @@
+<%- include("partials/header") -%>
+
+<h1><%= title %></h1>
+<p><%= publishContent %></p>
+
+<% if(img.data!=null){ %>
+    <img src="data:image/<%=img.contentType%>;base64,
+                     <%=img.data.toString('base64')%>" class="image-frame">
+<% } %>  
+    
+
+
+ 
+<%- include("partials/footer") -%>
